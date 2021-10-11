@@ -1,0 +1,271 @@
+/* geral */
+:root {
+    --color-main: #1F1A36;
+    --color-mainDark: #171327;
+
+    --color-blueButton: #503aa7;
+    --color-blueButtonDark: #412c96;
+
+    --color-link: #e76189;
+}
+
+* {
+    font-family: 'Roboto'
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    
+}
+
+header {
+    background-color: var(--color-main);
+    border-bottom: 1px solid var(--color-main);
+}
+
+.row {
+    margin: 0;
+}
+
+#card-main img {
+    min-height: 200px;
+    /* min-width: 200px; */
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: var(--color-main);
+    border: 2px solid var(--color-mainDark);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-blueButton);
+    border-color: var(--color-blueButtonDark);
+}
+
+.msg {
+    background-color: #D4EDDA;
+    color: var(--color-blueButton);
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #FFF;
+    background-color: var(--color-main);
+    border: 1px solid var(--color-blueButtonDark);
+    border-radius: 10px;
+    padding: 10px;
+    width: 275px;
+}
+
+/* navbar */
+#navbar img {
+    margin-left: 30px;
+    width: 80px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 5px 0;
+    background-color: var(--color-main);
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #FFF;
+}
+
+#navbar a:hover {
+    color: var(--color-link);
+}
+
+/* search */
+#search-container {
+    background-image: url("../img/event-banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #FFF;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Events */
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+#events-container .subtitle {
+    color: #757575;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#events-container .card {
+    /* flex: 1 1 24%; */
+    max-width: 25%;
+    border-radius: 10px;
+    padding: 0;
+    /* margin: .5%; */
+    margin: 50px;
+    
+}
+
+.fail-message {
+    margin-left: 40px;
+}
+
+#events-container img {
+    max-height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-date {
+    font-size: 12px;
+    color: #CCC;
+}
+
+.card .card-title {
+    color: var(--color-mainDark);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-participants {
+    font-size: 14px;
+    color: var(--color-mainDark);
+}
+
+/* create page */
+#event-create-container {
+    padding: 30px;
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 12px;
+}
+
+/* event page */
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+}
+
+#info-container {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: var(--color-link);
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li {
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+}
+
+#description-container {
+    margin-top: 30px;
+}
+
+/* dashboard */
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+.dashboard-events-container th {
+    width: 25%;
+}
+
+.dashboard-events-container form {
+    display: inline-block;
+}
+
+/* edit page */
+.img-preview {
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--color-main);
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
